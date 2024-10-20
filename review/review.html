@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.7 Практическая работа. Отзывы </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form action="review.php" method="POST">
+        <label for="username">Ваше имя:</label>
+        <input type="text" name="username" id="username" required />
+  
+        <label for="rating">Оценка товара (от 1 до 5):</label>
+        <input type="number" name="rating" id="rating" min="1" max="5" required />
+  
+        <label for="review">Отзыв:</label>
+        <textarea name="review" id="review" required></textarea>
+  
+        <input type="submit" value="Отправить отзыв" />
+      </form>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
